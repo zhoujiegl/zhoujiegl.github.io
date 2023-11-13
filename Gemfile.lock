@@ -67,13 +67,11 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  jekyll (~> 4.0)
+  jekyll (~> 4.3.2)
   jekyll-paginate
   rake
   wdm (>= 0.1.0)
-  webrick (~> 1.7)
+  webrick (~> 1.8.1)
 
 BUNDLED WITH
    2.4.21
-
-bundle lock --add-platform x86_64-linux
