@@ -58,7 +58,7 @@ gitalk:
   enable: true
   owner: zhoujiegl
   admin: zhoujiegl
-  repo: zhoujiegl.github.io/
+  repo: zhoujiegl.github.io
   ClientID: d73625753e213dda1264
   ClientSecret: a659f9ec6d08f91ae97b62f58ba445d076d87849
 
