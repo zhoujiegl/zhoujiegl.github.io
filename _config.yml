@@ -1,24 +1,17 @@
 # Site settings
-title: 建设中的网站demo(master)
+title: 建设中的网站
 SEOTitle: 我的博客 | My Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: zhoujiegl@126.com
 description: ""
 keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
+url: "https://zhoujiegl.github.io/"              # your host, for absolute URL
 baseurl: "/Ling"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
-RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
 github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
-
-
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -45,15 +38,9 @@ kramdown:
 
 
 
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
-
-
-
+# Gitalk 评论区设置
 gitalk:
   enable: true
-
-
 
 
 # Analytics settings
@@ -65,20 +52,20 @@ ga_domain: huangxuan.me
 
 
 
-# Sidebar settings
+# 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
 sidebar-avatar: /img/Pete.png            # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
-# Featured Tags
+# 标签栏设置
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 port: 5000
 
-# Friends
+# 链接区设置
 friends: [
     {
         title: "链接1",
