@@ -4,14 +4,11 @@ title:      "这是第二篇demo文章"
 subtitle:   "这是副标题"
 date:       2023-11-13
 author:     "Ling"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/img2.jpg"
 tags:
     - 标签1
     - 标签2
     - 标签3
 ---
-
-
-JavaScript 有着很奇怪的命名史。
 
 此文章用来验证评论区是否自动随着文章生成
