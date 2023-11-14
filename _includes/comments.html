@@ -1,0 +1,16 @@
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+    id: 'article-' + location.pathname,
+    clientID: 'd73625753e213dda1264',
+    clientSecret: '5ad568e99820d7027311c26e679067e6d77609d6',
+    repo: 'zhoujiegl.github.io',
+    owner: 'zhoujiegl',
+    admin: ['zhoujiegl'], 
+	labels: ['Gitalk'],
+    distractionFreeMode: false
+})
+gitalk.render('gitalk-container')
+</script> 
