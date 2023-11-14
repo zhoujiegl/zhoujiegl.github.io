@@ -3,13 +3,14 @@
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
 var gitalk = new Gitalk({
-    id: '{{ page.date }}',
-    clientID: '{{ site.gitalk.clientID }}',
-    clientSecret: '{{ site.gitalk.clientSecret }}',
-    repo: '{{ site.gitalk.repo }}',
-    owner: '{{ site.gitalk.owner }}',
-    admin: ['{{ site.gitalk.owner }}'], 
+    id: 'location.pathname',
+    clientID: 'd73625753e213dda1264',
+    clientSecret: '5ad568e99820d7027311c26e679067e6d77609d6',
+    repo: 'zhoujiegl.github.io',
+    owner: 'zhoujiegl',
+    admin: ['zhoujiegl'], 
 	labels: ['Gitalk'],
+    distractionFreeMode: false
 })
 gitalk.render('gitalk-container')
 </script> 

@@ -52,12 +52,7 @@ kramdown:
 
 gitalk:
   enable: true
-  owner: zhoujiegl
-  admin: zhoujiegl
-  repo: zhoujiegl.github.io
-  ClientID: d73625753e213dda1264
-  ClientSecret: 5ad568e99820d7027311c26e679067e6d77609d6
-  id: md5(location.pathname)
+
 
 
 
