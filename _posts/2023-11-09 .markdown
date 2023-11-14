@@ -1,0 +1,16 @@
+---
+layout:     post
+title:      "这是一篇demo文章"
+subtitle:   "这又是什么?"
+date:       2023-11-09
+author:     "Ling"
+header-img: "img/post-bg-js-version.jpg"
+tags:
+    - 标签1
+    - 标签2
+    - 标签3
+---
+
+
+JavaScript 有着很奇怪的命名史。
+

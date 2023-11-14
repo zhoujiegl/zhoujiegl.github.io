@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "这是第二篇篇demo文章"
+title:      "这是第二篇demo文章"
 subtitle:   "这是副标题"
-date:       2023-11-14
+date:       2023-11-13
 author:     "Ling"
 header-img: "img/post-bg-js-version.jpg"
 tags:
