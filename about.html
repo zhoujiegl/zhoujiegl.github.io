@@ -1,11 +1,20 @@
 ---
 layout: page
-title: "About"
-description: "Hey, this is Hux."
-header-img: "img/about-bg.jpg"
+title: "关于我"
+description: "嗨，欢迎"
+header-img: "img/404-bg.jpg"
 ---
 
-<!-- Language Selector -->
+<head>
+    <link href="../../../../css/rouge.css" rel="stylesheet">
+    
+<script type="text/javascript" color="238,205,205" opacity='0.7' zIndex="-2" count="99" src="../../../../js/canvas-nest.min.js"></script>
+<!--//添加评论系统-->
+<link rel="stylesheet" href="../../../../css/gitalk.css">
+    <script src="../../../../js/gitalk.min.js"></script>
+</head>
+
+<!-- 语言选择器，感觉没什么必要，太装了，可以开发为其他功能，一个页面包含多个文章的感觉 -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
     <option value="1"> 英语 English </option>
@@ -78,6 +87,14 @@ header-img: "img/about-bg.jpg"
     data-url="{{site.url}}/about/"></div>
 </div>
 <!-- 多说评论框 end -->
+
+ <!-- gitalk 评论框 start -->
+ {% if site.gitalk %}
+ <div class="comment">
+     {% include comments.html %}
+ </div>
+  {% endif %}
+ <!-- gitalk 评论框 end -->
 
 <!-- Duoshuo hacking -->
 <input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
