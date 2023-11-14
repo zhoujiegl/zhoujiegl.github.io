@@ -48,10 +48,14 @@ kramdown:
 # Disqus settings
 #disqus_username: _your_disqus_short_name_
 
-# Duoshuo settings
-duoshuo_username: huxblog
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# GitTalk 评论插件
+gitalk:
+    enable: true
+    owner: zhoujiegl
+    repo: zhoujiegl.github.io
+    clientID: d73625753e213dda1264
+    client secret: a659f9ec6d08f91ae97b62f58ba445d076d87849
+    admin: zhoujiegl
 
 
 
