@@ -56,7 +56,7 @@ gitalk:
   admin: zhoujiegl
   repo: zhoujiegl.github.io
   ClientID: d73625753e213dda1264
-  ClientSecret: a659f9ec6d08f91ae97b62f58ba445d076d87849
+  ClientSecret: 5ad568e99820d7027311c26e679067e6d77609d6
   id: md5(location.pathname)
 
 
@@ -73,7 +73,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/Pete.png            # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
