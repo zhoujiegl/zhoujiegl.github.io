@@ -86,19 +86,19 @@ port: 5000
 # Friends
 friends: [
     {
-        title: "Hux Blog",
+        title: "链接1",
         href: "http://huangxuan.me"
     },{
-        title: "Foo",
+        title: "链接2",
         href: "#"
     },{
-        title: "Bar",
+        title: "链接3",
         href: "#"
     },{
-        title: "Example Friends",
+        title: "链接4",
         href: "#"
     },{
-        title: "It helps SEO",
+        title: "链接5",
         href: "#"
     }
 ]
