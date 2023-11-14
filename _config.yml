@@ -27,7 +27,6 @@ anchorjs: true                # if you want to customize anchor. check out line:
 # from PR#40, to support local preview for Jekyll 3.0
 plugins: [jekyll-paginate]
 
-post: 5000
 
 # Markdown settings
 # replace redcarpet to kramdown,
