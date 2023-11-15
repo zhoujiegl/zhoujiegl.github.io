@@ -1,12 +1,22 @@
 ---
 layout: page
-title: "关于我"
-description: "嗨，欢迎"
-header-img: "img/404-bg.jpg"
+title: "About"
+description: "「嘿，欢迎」"
+header-img: "img/bg-walle.jpg"
 header-mask: 0.3
 multilingual: true
 ---
+
 {% include multilingual-sel.html %}
+
+<head>
+    <link href="../../../../css/rouge.css" rel="stylesheet">
+    
+<script type="text/javascript" color="238,205,205" opacity='0.7' zIndex="-2" count="99" src="../../../../js/canvas-nest.min.js"></script>
+<!--//添加评论系统-->
+    <link rel="stylesheet" href="../../../../css/gitalk.css">
+    <script src="../../../../js/gitalk.min.js"></script>
+</head>
 
 <!-- Chinese Version -->
 <div class="zh post-container">
@@ -20,6 +30,7 @@ multilingual: true
     {{ about_en | markdownify }}
 </div>
 
+
 <!-- gitalk 评论框 start -->
  {% if site.gitalk %}
 <div class="comment">
@@ -28,16 +39,16 @@ multilingual: true
   {% endif %}
 <!-- gitalk 评论框 end -->
 
-
-<!-- disqus 评论框 start
+<!--
 {% if site.disqus_username %}
-
+ disqus 评论框 start 
 <div class="comment">
     <div id="disqus_thread" class="disqus-thread">
 
     </div>
 </div>
-<!-- disqus 评论框 end -->
+ disqus 评论框 end -->
+
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) 
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -45,12 +56,11 @@ multilingual: true
     var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
     var disqus_url = "{{site.url}}{{page.url}}";
 
-    (function() {
+    (function () {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-
-{% endif %}
- disqus 公共JS代码 end -->
+ disqus 公共JS代码 end 
+{% endif %}-->

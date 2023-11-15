@@ -10,16 +10,14 @@ layout: default
 {% include intro-header.html type='post' %}
 
 <head>
-    <link href="../../../../css/rouge.css" rel="stylesheet">
-    
-<script type="text/javascript" color="238,205,205" opacity='0.7' zIndex="-2" count="99" src="../../../../js/canvas-nest.min.js"></script>
-<!--//添加评论系统-->
-<link rel="stylesheet" href="../../../../css/gitalk.css">
+    <link href="../../../../css/rouge.css" rel="stylesheet">    
+    <script type="text/javascript" color="238,205,205" opacity='0.7' zIndex="-2" count="99" src="../../../../js/canvas-nest.min.js"></script>
+<!--添加评论系统-->
+    <link rel="stylesheet" href="../../../../css/gitalk.css">
     <script src="../../../../js/gitalk.min.js"></script>
 </head>
 
-
-<!-- Post Content -->
+<!-- 评论系统 -->
 <article>
     <div class="container">
         <div class="row">
@@ -35,30 +33,55 @@ layout: default
                     {% include multilingual-sel.html %}
                 {% endif %}
 
-                {{ content }}
+				{{ content }}
 
+                <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; 上一篇文章</a>
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+                        上一篇<br>
+                        <span>{{page.previous.title}}</span>
+                        </a>
                     </li>
                     {% endif %}
                     {% if page.next.url %}
                     <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">下一篇文章 &rarr;</a>
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+                        下一篇<br>
+                        <span>{{page.next.title}}</span>
+                        </a>
                     </li>
                     {% endif %}
                 </ul>
+                <hr style="visibility: hidden;">
 
-                <!-- gitalk 评论框 start -->
-                {% if site.gitalk %}
-                <div class="comment">
-                    {% include comments.html %}
+               
+                 <!-- gitalk 评论框 start -->
+                 {% if site.gitalk %}
+                 <div class="comment">
+                     {% include comments.html %}
+                 </div>
+                 {% endif %}
+                 <!-- gitalk 评论框 end -->
+            </div>  
+
+    <!-- 侧边 文章目录 Container -->
+        {% unless page.no-catalog %}
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">文章大纲</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
                 </div>
-                {% endif %}
-                <!-- gitalk 评论框 end -->
-
             </div>
+        {% endunless %}
 
     <!-- Sidebar Container -->
             <div class="
@@ -66,37 +89,20 @@ layout: default
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
-                <!-- 所有文章页面的标签推荐区(不想要可删) -->
-                {% if site.featured-tags %}
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">标签推荐</a></h5>
-                    <div class="tags">
-        				{% for tag in site.tags %}
-                            {% if tag[1].size > site.featured-condition-size %}
-                				<a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
-                                    {{ tag[0] }}
-                                </a>
-                            {% endif %}
-        				{% endfor %}
-        			</div>
-                </section>
-                {% endif %}
+                <!-- Featured Tags -->
+                {% include featured-tags.html bottom=true %}
 
-                <!-- 链接跳转区，全局设置在_config.yml文件中 -->
-                {% if site.friends %}
-                <hr>
-                <h5>链接跳转区</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
+                <!-- Friends Blog -->
+                {% include friends.html %}
             </div>
         </div>
     </div>
 </article>
+
+<!-- add support for mathjax by voleking-->
+{% if page.mathjax %}
+  {% include mathjax_support.html %}
+{% endif %}
 
 
 {% if site.anchorjs %}
@@ -113,11 +119,11 @@ layout: default
 </script>
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
 <script>
-    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
         anchors.options = {
-          visible: 'always',
+          visible: 'hover',
           placement: 'right',
-          icon: '#'
+          // icon: '#'
         };
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })

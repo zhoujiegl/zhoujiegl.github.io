@@ -41,6 +41,7 @@ if(navigator.serviceWorker){
 
   // register message receiver
   // https://dbwriteups.wordpress.com/2015/11/16/service-workers-part-3-communication-between-sw-and-pages/
+  /*
   navigator.serviceWorker.onmessage = (e) => {
     console.log('SW: SW Broadcasting:', event);
     const data = e.data
