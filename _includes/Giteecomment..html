@@ -1,0 +1,17 @@
+<div id="giteementDiv"></div>
+<link rel="stylesheet" href="https://giteement.oss-cn-beijing.aliyuncs.com/default.css">
+<script src="https://giteement.oss-cn-beijing.aliyuncs.com/giteement.browser.js"></script>
+
+<script>
+var giteement = new Giteement({
+    id: 'article-' + location.pathname,
+    clientID: '908b41a51b11b313eafe96d29067bb2fb87fb8ca6b90a0551d77f2d079e5ae6d',
+    clientSecret: 'bbd6342f0a06c2a71fb0d180e028555be8c09700f161ddfb3710167e586372c4',
+    repo: 'zhoujiegl.gitee.io',
+    owner: 'zhoujiegl',
+    admin: ['zhoujiegl'], 
+    
+	  
+})
+gitalk.render('gitalk-container')
+</script> 

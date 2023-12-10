@@ -1,0 +1,108 @@
+# Site settings
+title: 建设中的网站
+SEOTitle: 我的Gitee博客 | My Blog
+header-img: img/homebg.jpg
+email: zhoujiegl@126.com
+description: "这里是@朔风凌的个人博客"
+keyword: "keyword区，自行添加"
+url: "https://zhoujiegl.gitee.io/" # your host, for absolute URL
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
+
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: false
+weibo_username: 
+zhihu_username: 
+github_username: 
+twitter_username: 
+#facebook_username:  huxpro
+#linkedin_username:  firstname-lastname-idxxxx
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10              # 一页放10篇文章的预览
+exclude:
+  [
+    "less",
+    "node_modules",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "README.zh.md",
+  ]
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Disqus settings
+# disqus_username: hux
+
+# valine 评论区设置
+leancloud:
+  enable: true
+  appId: hnH1ilG0BdEGVRdp0fInNn8I-gzGzoHsz
+  appkey: nWnQ6cd7wIOU5tmmTgpB2cbZ
+valine:
+  enable: true
+  placeholder: 请友好地评论
+  avatar: monsterid
+  meta: nick,mail,link
+  pageSize: 10
+  visitor: true
+
+# Gitalk 评论区设置
+gitalk:
+  enable: false
+
+# Sidebar settings
+sidebar: true # whether or not using Sidebar.
+sidebar-about-description: "多玩玩，多看看，多学学，曾经看似毫无关系的丝线将给未来编制一张结实的网"
+sidebar-avatar: /img/Pete.png # use absolute URL, seeing it's used in both `/` and `/about/`
+
+# Featured Tags
+featured-tags: true # whether or not using Feature-Tags
+featured-condition-size: 3 # A tag will be featured if the size of it is more than this condition value
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: flase
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+# Friends
+friends:
+  [
+    { title: "归档区优化", href: "http://mida.re/" },
+    { title: "链接2", href: "https://ebnbin.dev/" },
+    { title: "链接3", href: "http://kunq.me" },
+    { title: "链接4", href: "https://sherrywoo.me/" },
+    { title: "链接5", href: "http://blog.smdcn.net" },
+    { title: "链接6", href: "http://tiye.me/" },
+    { title: "链接7", href: "http://dhong.co" },
+    { title: "链接8", href: "http://ingf.github.io/" },
+  ]
