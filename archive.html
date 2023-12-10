@@ -12,14 +12,25 @@ https://github.com/kitian616/jekyll-TeXt-theme
 <!-- Page Header -->
 {% include intro-header.html type='page' short=true %}
 
+<style>
+  .白羊 { color: #ff0000; } /* 红色 */
+  .金牛 { color: #00ff00; } /* 绿色 */
+  .双子 { color: #0000ff; } /* 蓝色 */
+	.巨蟹 { color: #0000ff; } /* 蓝色 */
+	.狮子 { color: #1d1d68; } /* 蓝色 */
+	.aaaaa { color: #1d1d68; } /* 蓝色 */
+  /* ... 其他星座 ... */
+  .pisces { color: #800080; } /* 紫色 */
+</style>
+
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<!-- Tags (as filter) -->
+			<!-- 标签列表 (as filter) -->
 			<div id='tag_cloud' class="tags tags-sup js-tags">
 				<a class="tag-button--all" data-encode="">
-					Show All
+					所有标签
 					<sup>{{site.posts.size}}</sup>
 				</a>
 
@@ -36,7 +47,7 @@ https://github.com/kitian616/jekyll-TeXt-theme
 				{{ tags | split:'__SEPERATOR__' | sort }}
 			</div>
 
-			<!-- Article List -->
+			<!-- 文章列表-->
 			<div class="mini-post-list js-result d-none">
 				{%- assign _sorted_list = site.posts -%}
 				{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
@@ -53,30 +64,54 @@ https://github.com/kitian616/jekyll-TeXt-theme
 				{%- assign _tags = _tags | append: _tag_encode | append: ',' -%}
 				{%- endif -%}
 				{%- endfor -%}
-
+					<!--此段代码为按年份将文章分组-->
 				{% comment %} group by year {% endcomment %}
-				{%- assign _currentdate = _article.date | date: '%Y' -%}
+				{%- assign _currentdate = _article.date | date: '%Y年' -%}
+				{%- assign _riqi = _article.date | date: '%m.%d' -%}
+				{%- assign _currentmonth = _article.date | date: '%m' -%}
+				{%- assign _chineseMonth = "" -%}
+				{%- case _currentmonth -%}
+					{%- when '01' -%} {%- assign _chineseMonth = "♒一月" -%}
+					{%- when '02' -%} {%- assign _chineseMonth = "♓二月" -%}
+					{%- when '03' -%} {%- assign _chineseMonth = "♈三月" -%}
+					{%- when '04' -%} {%- assign _chineseMonth = "♉四月" -%}
+					{%- when '05' -%} {%- assign _chineseMonth = "♊五月" -%}
+					{%- when '06' -%} {%- assign _chineseMonth = "♋六月" -%}
+					{%- when '07' -%} {%- assign _chineseMonth = "♌七月" -%}
+					{%- when '08' -%} {%- assign _chineseMonth = "♍八月" -%}
+					{%- when '09' -%} {%- assign _chineseMonth = "♎九月" -%}
+					{%- when '10' -%} {%- assign _chineseMonth = "♏十月" -%}{%- assign _星座Class = "天蝎" -%}
+					{%- when '11' -%} {%- assign _chineseMonth = "♐ 十一月" -%}
+					{%- when '12' -%} {%- assign _chineseMonth = "♑十二月" -%}
+				{%- endcase -%}
 				{%- if _currentdate != _date -%}
 				{%- unless forloop.first -%}</section>{%- endunless -%}
 				<section>
-					<span class="fa listing-seperator">
+					<!--currentdate会显示年份信息，并把属于这一年的文章显示在其下方-->
+					<span class="fa fa-calendar-times-o listing-seperator">
 						<span class="tag-text">{{ _currentdate }}</span>
 					</span>
 					{%- assign _date = _currentdate -%}
 					{%- endif -%}
 
+					{%- if _currentmonth != _month -%}
+					{%- unless forloop.first -%}</ul>{%- endunless -%}
+					<ul class="month-list">
+						<!-- currentmonth 会显示月份信息 -->
+						<li><b>{{ _chineseMonth }}</b>
+						</li>
+						{%- assign _month = _currentmonth -%}
+					{%- endif -%}
+
 					<div class="post-preview item" data-tags="{{ _tags }}">
-						<a href="{{ _article.url | prepend: site.baseurl }}">
-							<h2 class="post-title">
+						<li>{{ _riqi }}
+						<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+						<a href="{{ _article.url | prepend: site.baseurl }}">							
+							<span class="post-title">
 								{{ _article.title }}
-							</h2>
-							{% if _article.subtitle %}
-							<h3 class="post-subtitle">
-								{{ _article.subtitle }}
-							</h3>
-							{% endif %}
+							</span>
 						</a>
-						<hr>
+						</li>						
 					</div>
 					{%- if forloop.last -%}
 				</section>{%- endif -%}

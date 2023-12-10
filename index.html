@@ -1,9 +1,17 @@
 ---
 layout: page
-description: "「愿你我，所见皆星河」"
+description: "「愿薪火相传，美德不灭」"
 ---
 
 {% for post in paginator.posts %}
+
+<!-- 回传giteement评论页网址 
+<script src="https://giteement.oss-cn-beijing.aliyuncs.com/oauthcallback.browser.js"></script>
+  <script>
+    Oauthcallback();
+  </script>              -->
+
+
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">

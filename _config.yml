@@ -1,11 +1,11 @@
 # Site settings
 title: 建设中的网站
-SEOTitle: 我的博客 | My Blog
+SEOTitle: 我的Gitee博客 | My Blog
 header-img: img/homebg.jpg
 email: zhoujiegl@126.com
 description: "这里是@朔风凌的个人博客"
 keyword: "keyword区，自行添加"
-url: "https://zhoujiegl.github.io/" # your host, for absolute URL
+url: "https://zhoujiegl.gitee.io/" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -61,9 +61,22 @@ kramdown:
 # Disqus settings
 # disqus_username: hux
 
+# valine 评论区设置
+leancloud:
+  enable: true
+  appId: hnH1ilG0BdEGVRdp0fInNn8I-gzGzoHsz
+  appkey: nWnQ6cd7wIOU5tmmTgpB2cbZ
+valine:
+  enable: true
+  placeholder: 请友好地评论
+  avatar: monsterid
+  meta: nick,mail,link
+  pageSize: 10
+  visitor: true
+
 # Gitalk 评论区设置
 gitalk:
-  enable: true
+  enable: false
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
@@ -84,7 +97,7 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "链接1", href: "http://mida.re/" },
+    { title: "归档区优化", href: "http://mida.re/" },
     { title: "链接2", href: "https://ebnbin.dev/" },
     { title: "链接3", href: "http://kunq.me" },
     { title: "链接4", href: "https://sherrywoo.me/" },

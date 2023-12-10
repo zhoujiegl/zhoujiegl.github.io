@@ -218,11 +218,12 @@
 
 <!-- Multi-Lingual -->
 {% if page.multilingual %}
-<!-- Handle Language Change -->
+<!-- 语言选择下拉列表 -->
 <script type="text/javascript">
-    // get nodes
+    // 获取节点
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
+    var $locked1 = document.querySelector(".locked1");
     var $select = document.querySelector("select");
 
     // Changes at v1.8.1: include lang flag as a url query. This interop well with catalog hash anchors.
@@ -237,20 +238,22 @@
     // handle render
     function _render() {
         var lang = getLang()
-        // en
+        $zh.style.display = "none";
+        $en.style.display = "none";
+        $locked1.style.display = "none";
+
         if (lang == "en") {
             $select.selectedIndex = 1;
             $en.style.display = "block";
             $en.classList.add("active");
-            $zh.style.display = "none";
-            $zh.classList.remove("active");
-            // default to zh-cn
-        } else {
+        }   else if(lang == "locked1"){        
+            $select.selectedIndex = 2;
+            $locked1.style.display = "block";
+            $locked1.classList.add("active");
+        }   else {
             $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $zh.classList.add("active");
-            $en.style.display = "none";
-            $en.classList.remove("active");
+            $zh.style.display = "block";    
+            $zh.classList.add("active");          
         }
         // interop with catalog 
         generateCatalog(".catalog-body");
@@ -260,8 +263,10 @@
     function onLanChange(index) {
         if (index == 0) {
             lang = "zh"
-        } else {
+        } else if(index == 1 ){
             lang = "en"
+        } else if(index == 2 ){
+            lang = "locked1"
         }
         setLang(lang)
     }
