@@ -53,13 +53,13 @@ You can easily customize the blog by modifying `_config.yml`:
 
 ```yml
 # Site settings
-title: Hux Blog             # title of your website
-SEOTitle: Hux Blog          # check out docs for more detail
+title: Cody Blog             # title of your website
+SEOTitle: Cody Blog          # check out docs for more detail
 description: "Cool Blog"    # ...
 
 # SNS settings      
-github_username: huxpro     # modify this account to yours
-weibo_username: huxpro      # the footer woule be auto-updated.
+github_username: zhoujiegl     # modify this account to yours
+weibo_username: zhoujiegl      # the footer woule be auto-updated.
 
 # Build settings
 paginate: 10                # nums of posts in one page

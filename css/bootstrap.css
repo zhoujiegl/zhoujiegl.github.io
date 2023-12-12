@@ -6563,4 +6563,8 @@ button.close {
     display: none !important;
   }
 }
+
+.vpower.tex-right {
+	display: none;
+}
 /*# sourceMappingURL=bootstrap.css.map */

@@ -185,3 +185,7 @@
 .highlight .o {
   color: #f92672;
 }
+
+.vpower.tex-right {
+	display: none;
+}
