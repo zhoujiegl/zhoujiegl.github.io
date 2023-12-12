@@ -6770,7 +6770,7 @@ var ic = Kn({
 				key: 1,
 				class: "wl-empty",
 				textContent: Ie(R.value.sofa)
-			}, null, 8, ec))], 64)), y.value.copyright ? (Gr(), Yr("div", rc, [cl(" Powered by "), lc, cl(" v" + Ie(on(Ha)), 1)])) : ul("v-if", !0)]))
+			}, null, 8, ec))], 64)), y.value.copyright ? (Gr(), Yr("div", rc, [cl(" 开源自"), lc, cl(" v" + Ie(on(Ha)), 1)])) : ul("v-if", !0)]))
 		}
 	}),
 	sc = bo(ic, [
