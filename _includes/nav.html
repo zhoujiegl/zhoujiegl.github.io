@@ -26,7 +26,7 @@
                         {% for page in site.pages %}
                         {% if page.title and page.hide-in-nav != true %}
                         <li>
-                            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                            <a href="{{ page.url | prepend: site.baseurl }}"><i class="fa-solid fa-tags"></i>&nbsp{{ page.title }}</a>
                         </li>
                         {% endif %}
                         {% endfor %}

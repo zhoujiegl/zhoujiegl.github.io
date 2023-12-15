@@ -34,8 +34,10 @@ description: "「愿薪火相传，美德不灭」"
         <i class="fa-regular fa-clock"></i>&nbsp{{ post.date | date: "%Y-%m-%d" }}
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-regular fa-user"></i>&nbsp{{ post.author }}
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-regular fa-file-lines"></i>&nbsp{{ post.content | number_of_words:"cjk" }} 字
+        <!--
         {% if post.tags %}
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-tags"></i>&nbsp{{ post.tags | join: ", " }}
+        -->
         {% endif %}
     </p>
 </div>
