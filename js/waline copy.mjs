@@ -6124,7 +6124,7 @@ var ga = Kn({
 							onClick: t[3] || (t[3] = e => k.value = !k.value)
 						}, [ol(on(Ns))], 10, Xo)
 					]), sl("div", Yo, [ea, sl("div", ta, [cl(Ie(x.value) + " ", 1), on(l)
-							.wordLimit ? (Gr(), Yr("span", na, [cl("  /  "), sl("span", {
+							.wordLimit ? (Gr(), Yr("span", na, [cl(" / "), sl("span", {
 								class: Ae({
 									illegal: !S.value
 								}),
