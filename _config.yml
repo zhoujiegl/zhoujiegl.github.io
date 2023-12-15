@@ -61,22 +61,6 @@ kramdown:
 # Disqus settings
 # disqus_username: hux
 
-# valine 评论区设置
-leancloud:
-  enable: true
-  appId: hnH1ilG0BdEGVRdp0fInNn8I-gzGzoHsz
-  appkey: nWnQ6cd7wIOU5tmmTgpB2cbZ
-valine:
-  enable: true
-  placeholder: 请友好地评论
-  avatar: monsterid
-  meta: nick,mail,link
-  pageSize: 10
-  visitor: true
-
-# Gitalk 评论区设置
-gitalk:
-  enable: false
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.

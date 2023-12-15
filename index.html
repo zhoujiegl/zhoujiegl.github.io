@@ -31,7 +31,10 @@ description: "「愿薪火相传，美德不灭」"
         </div>
     </a>
     <p class="post-meta">
-        {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}发表于{{ post.date | date: "%Y-%m-%d" }}
+        <i class="fa-regular fa-clock"></i>&nbsp{{ post.date | date: "%Y-%m-%d" }}
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-regular fa-user"></i>&nbsp{{ post.author }}
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-regular fa-file-word"></i>&nbsp{{ post.content | number_of_words }} 字
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-tag"></i>&nbsp{{ site.tages }}
     </p>
 </div>
 <hr>
