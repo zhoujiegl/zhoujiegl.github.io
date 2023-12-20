@@ -1,0 +1,18 @@
+<!-- _layouts/archive.html -->
+
+---
+layout: default
+title: 归档
+---
+
+<section>
+  <h5>年度归档</h5>
+  <ul class="archive-list">
+    {% for year in site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+      <li>
+        <a href="{{ '/archive/' | append: year.name }}">{{ year.name }}</a>
+        <span class="post-count">{{ year.items | size }} 篇文章</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
