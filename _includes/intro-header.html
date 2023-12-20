@@ -46,7 +46,9 @@
                     <h1>{{ page.title }}</h1>
                     {% comment %} always create a h2 for keeping the margin {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
-                    <span class="meta">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} 发表于 {{ page.date | date: "%Y-%m-%d"}}</span>
+                    <span class="meta" style="display: inline-block;"><i class="fa-regular fa-clock"></i> {{ page.date | date: "%Y-%m-%d"}}&nbsp&nbsp&nbsp&nbsp<i class="fa-regular fa-user"></i> &nbsp{{ page.author }} </span>
+                    &nbsp&nbsp&nbsp&nbsp<i class="fa-regular fa-eye"></i>
+                    <span class="waline-pageview-count" style="display: inline-block;" data-path="/guide/client/count.html" />
                 </div>
             </div>
         </div>
