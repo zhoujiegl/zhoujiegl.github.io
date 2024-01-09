@@ -118,6 +118,14 @@ Hux大神将模板更新到V1.8后便不再更新，最终的效果页：[黄玄
 不理解这句话没关系，总之就是下载一些必要的配件。打开cmd输入：
 
 - **gem install jekyll**，回车等待安装完成。此步完成，电脑将可以使用 **bundle** 系列指令
+  如果此指令长期没有反应，可以执行以下命令后再执行：
+
+  ```ruby
+  gem sources --remove https://rubygems.org/		**移除原下载站点
+  gem sources -a https://gems.ruby-china.com			**使用新的下载站点
+  ```
+
+  
 
   ![image-20231120153700099](./img/in-post/image-20231120153700099.png)
 
@@ -126,6 +134,7 @@ Hux大神将模板更新到V1.8后便不再更新，最终的效果页：[黄玄
   <img src="./img/in-post/image-20231120153921466.png" alt="image-20231120153921466" style="zoom:50%;" />
 
 - **bundle install**，回车耐心等待安装完成。这个命令会读取你文件夹中的Gemfile，下载该文件中记录的插件。安装完成后，本地修改浏览网站所需的所有配置就齐了。
+  如果这个指令长时间没有反应，可以先执行一次**bundle config mirror.https://rubygems.org https://gems.ruby-china.com**来切换国内的镜像下载
 
 - 验证网站能否正常打开
 
