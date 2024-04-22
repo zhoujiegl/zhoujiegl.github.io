@@ -1,9 +1,9 @@
 # Site settings
 title: 建设中的网站
-SEOTitle: 我的Gitee博客 | My Blog
+SEOTitle: 建设中 | Building
 header-img: img/homebg.jpg
 email: zhoujiegl@126.com
-description: "这里是@朔风凌的个人博客"
+description: "正在建设中"
 keyword: "keyword区，自行添加"
 url: "https://zhoujiegl.gitee.io/" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
