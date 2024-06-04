@@ -81,12 +81,14 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "归档区优化", href: "http://mida.re/" },
-    { title: "链接2", href: "https://ebnbin.dev/" },
-    { title: "链接3", href: "http://kunq.me" },
-    { title: "链接4", href: "https://sherrywoo.me/" },
-    { title: "链接5", href: "http://blog.smdcn.net" },
-    { title: "链接6", href: "http://tiye.me/" },
-    { title: "链接7", href: "http://dhong.co" },
-    { title: "链接8", href: "http://ingf.github.io/" },
+    { title: "GeoGebra合集", href: "https://www.bilibili.com/video/BV1ez421Q7i4/" },
+    { title: "GeoGebra官网", href: "https://www.geogebra.org/" },
+    { title: "通义万象", href: "https://tongyi.aliyun.com/wanxiang/?spm=5176.28326591.0.0.40f76ee1fu3TTy" },
+    { title: "通义千问", href: "https://tongyi.aliyun.com/qianwen/?spm=5176.28326591.0.0.40f76ee1fu3TTy" },
+    { title: "智谱清言", href: "https://chatglm.cn/main/alltoolsdetail" },
+    { title: "腾讯混元模型", href: "https://yuanbao.tencent.com/bot/chat" },
+    { title: "Kimi", href: "https://kimi.moonshot.cn/" },    
+    { title: "中国大学MOOC", href: "https://www.icourse163.org/" },
+    
+    
   ]
