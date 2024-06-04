@@ -5,7 +5,7 @@ header-img: img/homebg.jpg
 email: zhoujiegl@126.com
 description: "正在建设中"
 keyword: "keyword区，自行添加"
-url: "https://zhoujiegl.gitee.io/" # your host, for absolute URL
+url: "https://zhoujiegl.top" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -64,7 +64,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "多玩玩，多看看，多学学，曾经看似毫无关系的丝线将给未来编制一张结实的网"
+sidebar-about-description: "但行好事,莫问前程"
 sidebar-avatar: /img/Pete.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
