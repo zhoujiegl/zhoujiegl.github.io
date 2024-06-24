@@ -47,6 +47,13 @@ description: "「愿薪火相传，美德不灭」"
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 新文章</a>
     </li>
     {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+    {% unless page == paginator.current_page %}
+    <li class="{% if page == 1 %}first{% elsif page == paginator.total_pages %}last{% else %}page{% endif %}">
+        <a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+    </li>
+    {% endunless %}
+    {% endfor %}
     {% if paginator.next_page %}
     <li class="next">
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">老文章 &rarr;</a>
@@ -54,3 +61,20 @@ description: "「愿薪火相传，美德不灭」"
     {% endif %}
 </ul>
 {% endif %}
+
+<!-- 老分页方式 
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 新文章</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">老文章 &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+-->

@@ -1,5 +1,5 @@
 ---
-title: 标签区
+title: Archive
 layout: default
 description: "「-_-」"
 header-img: "img/bg-little-universe.jpg"
@@ -12,17 +12,6 @@ https://github.com/kitian616/jekyll-TeXt-theme
 <!-- Page Header -->
 {% include intro-header.html type='page' short=true %}
 
-<style>
-  .白羊 { color: #ff0000; } /* 红色 */
-  .金牛 { color: #00ff00; } /* 绿色 */
-  .双子 { color: #0000ff; } /* 蓝色 */
-	.巨蟹 { color: #0000ff; } /* 蓝色 */
-	.狮子 { color: #1d1d68; } /* 蓝色 */
-	.aaaaa { color: #1d1d68; } /* 蓝色 */
-  /* ... 其他星座 ... */
-  .pisces { color: #800080; } /* 紫色 */
-</style>
-
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
@@ -33,7 +22,6 @@ https://github.com/kitian616/jekyll-TeXt-theme
 					所有标签
 					<sup>{{site.posts.size}}</sup>
 				</a>
-
 				{% capture tags %}
 				{% for tag in site.tags %}
 				<a data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}"
@@ -80,15 +68,15 @@ https://github.com/kitian616/jekyll-TeXt-theme
 					{%- when '07' -%} {%- assign _chineseMonth = "♌七月" -%}
 					{%- when '08' -%} {%- assign _chineseMonth = "♍八月" -%}
 					{%- when '09' -%} {%- assign _chineseMonth = "♎九月" -%}
-					{%- when '10' -%} {%- assign _chineseMonth = "♏十月" -%}{%- assign _星座Class = "天蝎" -%}
-					{%- when '11' -%} {%- assign _chineseMonth = "♐ 十一月" -%}
+					{%- when '10' -%} {%- assign _chineseMonth = "♏十月" -%}
+					{%- when '11' -%} {%- assign _chineseMonth = "♐十一月" -%}
 					{%- when '12' -%} {%- assign _chineseMonth = "♑十二月" -%}
 				{%- endcase -%}
 				{%- if _currentdate != _date -%}
 				{%- unless forloop.first -%}</section>{%- endunless -%}
 				<section>
 					<!--currentdate会显示年份信息，并把属于这一年的文章显示在其下方-->
-					<span class="fa fa-calendar-times-o listing-seperator">
+					<span class="fa fa-calendar-check-o listing-seperator">
 						<span class="tag-text">{{ _currentdate }}</span>
 					</span>
 					{%- assign _date = _currentdate -%}
