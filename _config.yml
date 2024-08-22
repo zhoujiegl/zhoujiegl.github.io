@@ -1,5 +1,5 @@
 # Site settings
-title: 建设中的网站
+title: 木圭门大厅(施工中)
 SEOTitle: 建设中 | Building
 header-img: img/homebg.jpg
 email: zhoujiegl@126.com
@@ -65,7 +65,7 @@ kramdown:
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "但行好事,莫问前程"
-sidebar-avatar: /img/Pete.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/ico.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
@@ -81,7 +81,7 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "GeoGebra合集", href: "https://www.bilibili.com/video/BV1ez421Q7i4/" },
+    { title: "GeoGebra合集", href: "https://www.bilibili.com/video/BV1ez421Q7i4/",target: "_blank" },
     { title: "GeoGebra官网", href: "https://www.geogebra.org/" },
     { title: "通义万象", href: "https://tongyi.aliyun.com/wanxiang/?spm=5176.28326591.0.0.40f76ee1fu3TTy" },
     { title: "通义千问", href: "https://tongyi.aliyun.com/qianwen/?spm=5176.28326591.0.0.40f76ee1fu3TTy" },
