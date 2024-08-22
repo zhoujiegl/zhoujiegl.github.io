@@ -85,7 +85,7 @@ friends:
     { title: "GeoGebra官网", href: "https://www.geogebra.org/" ,target: "_blank"},
     { title: "通义万象", href: "https://tongyi.aliyun.com/wanxiang/?spm=5176.28326591.0.0.40f76ee1fu3TTy" ,target: "_blank"},
     { title: "通义千问", href: "https://tongyi.aliyun.com/qianwen/?spm=5176.28326591.0.0.40f76ee1fu3TTy",target: "_blank" },
-    { title: "智谱清言", href: "https://chatglm.cn/main/alltoolsdetail" },,target: "_blank"
+    { title: "智谱清言", href: "https://chatglm.cn/main/alltoolsdetail" ,target: "_blank"},
     { title: "腾讯混元模型", href: "https://yuanbao.tencent.com/bot/chat" ,target: "_blank"},
     { title: "Kimi", href: "https://kimi.moonshot.cn/",target: "_blank" },    
     { title: "中国大学MOOC", href: "https://www.icourse163.org/" ,target: "_blank"},
