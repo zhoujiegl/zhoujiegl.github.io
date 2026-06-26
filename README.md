@@ -121,7 +121,7 @@ Hux大神将模板更新到V1.8后便不再更新，最终的效果页：[黄玄
   如果此指令长期没有反应，可以执行以下命令后再执行：
 
   ```ruby
-  gem sources --remove https://rubygems.org/		**移除原下载站点
+  gem sources --remove https://rubygems.org/			**移除原下载站点
   gem sources -a https://gems.ruby-china.com			**使用新的下载站点
   ```
 
